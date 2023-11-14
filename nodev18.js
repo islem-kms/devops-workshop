@@ -8,9 +8,8 @@ const fs = require('fs');
 
 const app = express();
 
-// Configure AWS SDK with your credentials
 const s3Client = new S3Client({
-  region: 'ca-central-1', // Change to your desired AWS region
+  region: 'ca-central-1',
   credentials: {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,

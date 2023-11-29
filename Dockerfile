@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose the port your application will run on
-EXPOSE 3000
+EXPOSE 3300
 
 # Define the command to start your application
 CMD ["node", "minimal.js"]
